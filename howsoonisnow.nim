@@ -9,11 +9,11 @@ var twoja_głowa: seq[string] = @["mało kreatywnych myśli"]
 proc spotkaniepajuncze (pajunk: string = "Zjem Ci duszę"): string =
     echo $pajunk
 
-    while wola_żyćka > 0:
+while wola_żyćka > 0:
 
-        echo "Zauważasz pajunka w pokoju, niestety zbyt późno, żeby cokolwiek zrobić, pajunk znika, cały czas, kiedy nie jesteś w pokoju myślisz o tym, że na pewno jak wrócisz, to będzie siedział na torbie od laptoka"
-        echo "Wracasz do pokoju, ruszasz torbę i masz wrażenie, że coś po niej chodzi! Rzucasz ją, przyglądasz się, nie jesteś pewna, co widzisz, coś uciekało, ale nix nie ma, może to było światło, może włos"
-        echo "Zaufasz temu, co widziałaś? Czy to naprawdę był pajunk?"
+    echo "Zauważasz pajunka w pokoju, niestety zbyt późno, żeby cokolwiek zrobić, pajunk znika, cały czas, kiedy nie jesteś w pokoju myślisz o tym, że na pewno jak wrócisz, to będzie siedział na torbie od laptoka"
+    echo "Wracasz do pokoju, ruszasz torbę i masz wrażenie, że coś po niej chodzi! Rzucasz ją, przyglądasz się, nie jesteś pewna, co widzisz, coś uciekało, ale nix nie ma, może to było światło, może włos"
+    echo "Zaufasz temu, co widziałaś? Czy to naprawdę był pajunk?"
 
     var ty = readLine(stdin)
 
@@ -34,18 +34,18 @@ proc spotkaniepajuncze (pajunk: string = "Zjem Ci duszę"): string =
         echo "(napisałabym readLuna XD)"
 
         stan_psychiki = stan_psychiki + 21
-        int wola_żyćka = wola_żyćka + 37
+        wola_żyćka = wola_żyćka + 37
 
         twoja_głowa.add("robienie rzeczy")
 
         for musk in twoja_głowa:
             echo musk
 
-            break
+        break
 
     else:
 
-        echo "To naprawdę nie było ciężkie pytanie, pls ;_;"
+        echo "To naprawdę nie było ciężkie pytanie, pls ;_;"    
 
 echo "Nagle czujesz dziwne łaskotanie na remce, patrzysz na nią i widzisz pajunka, który zapierdala jak rydwan, patrzysz na niego, on patrzy na Ciebie, czy kcesz go zabić?" 
 
@@ -68,10 +68,7 @@ while stan_psychiki > 0:
 
         echo "...buntowanie się nix nie da, uwierz mje"
 
-
-echo "Jakiś tam koniec, Twój stan psychiki to #{stan_psychiki}, a wola żyćka #{wola_żyćka}" #do sprawdzenia, jak to się robi w Nimie XD
-
-echo "O! No i jeszcze ekwipuneczek:"
+echo "Jakiś tam koniec, Twój stan psychiki to {stan_psychiki}, a wola żyćka {wola_żyćka}" # nope, nadal cuś nie działa, ale wyjebion, to na potem XD
 
 for rzeczyfinal in twoja_głowa:
     echo rzeczyfinal
