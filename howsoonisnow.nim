@@ -47,10 +47,11 @@ while wola_żyćka > 0:
 
         echo "To naprawdę nie było ciężkie pytanie, pls ;_;"    
 
-echo "Nagle czujesz dziwne łaskotanie na remce, patrzysz na nią i widzisz pajunka, który zapierdala jak rydwan, patrzysz na niego, on patrzy na Ciebie, czy kcesz go zabić?" 
+echo "Nagle czujesz dziwne łaskotanie na remce, patrzysz na nią i widzisz pajunka, który zapierdala jak rydwan, patrzysz na niego, on patrzy na Ciebie" 
 
 while stan_psychiki > 0:
 
+    echo "Czy kcesz go zabić?"
     var ty2 = readLine(stdin)
 
     if ty2 == "tak":
@@ -68,9 +69,12 @@ while stan_psychiki > 0:
 
         echo "...buntowanie się nix nie da, uwierz mje"
 
-echo "Jakiś tam koniec, Twój stan psychiki to {stan_psychiki}, a wola żyćka {wola_żyćka}" # nope, nadal cuś nie działa, ale wyjebion, to na potem XD
+echo "Jakiś tam koniec, Twój stan psychiki to " & $stan_psychiki & ", a wola żyćka " & $wola_żyćka
+echo "O! No i jeszcze ekwipuneczek:"
 
 for rzeczyfinal in twoja_głowa:
     echo rzeczyfinal
 
 echo "Nie skompiluje mi się to ni chuja, ale przynajmniej doskonale się bawiłam XDDD"
+
+echo "Finalnie działa i nie powiem, żebym była dumna, ale zawsze cuś :3"
