@@ -42,8 +42,9 @@ while pajunkgracza > 0:
 
         break
 
-    else: 
+    else:
         echo "To ja nie rozumiem, po co przyłazisz na walki pajuncze, jak walczyć nie kcesz, szok..."
+
         break
 
 while pajunkgracza > pajunk1hp:
@@ -70,5 +71,3 @@ while pajunkgracza > pajunk1hp:
         break
 
 echo "Dobru, koniec walki na dziś XD" 
-
-# nadal jest problem z echoskami w else!
